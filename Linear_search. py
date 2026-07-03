@@ -1,0 +1,17 @@
+# h1 - Spam Detector using Linear Search
+
+blacklist = ["spam123", "offer999", "fake456", "ads001", "promo777"]
+
+sender = input("Enter Sender ID: ")
+
+found = False
+
+for i in blacklist:
+    if i == sender:
+        found = True
+        break
+
+if found:
+    print("Spam Sender Found")
+else:
+    print("Safe Sender")
